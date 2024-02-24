@@ -1,4 +1,4 @@
 
-# pip install opencv-python scikit-image
+# pip install opencv-python scikit-image requests
 # jupyter notebook
 
