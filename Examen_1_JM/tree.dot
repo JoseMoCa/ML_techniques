@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<Sulfatos &le; 274.5<br/>gini = 0.5<br/>samples = 3196<br/>value = [1578, 1618]<br/>class = 1>, fillcolor="#fafdfe"] ;
+1 [label=<Sólidos &le; 2314.0<br/>gini = 0.425<br/>samples = 290<br/>value = [89.0, 201.0]<br/>class = 1>, fillcolor="#91c8f1"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<pH &le; 428.0<br/>gini = 0.497<br/>samples = 145<br/>value = [67, 78]<br/>class = 1>, fillcolor="#e3f1fb"] ;
+1 -> 2 ;
+3 [label=<gini = 0.487<br/>samples = 112<br/>value = [65, 47]<br/>class = 0>, fillcolor="#f8dcc8"] ;
+2 -> 3 ;
+4 [label=<gini = 0.114<br/>samples = 33<br/>value = [2, 31]<br/>class = 1>, fillcolor="#46a3e7"] ;
+2 -> 4 ;
+5 [label=<pH &le; 220.5<br/>gini = 0.257<br/>samples = 145<br/>value = [22, 123]<br/>class = 1>, fillcolor="#5cafea"] ;
+1 -> 5 ;
+6 [label=<gini = 0.499<br/>samples = 21<br/>value = [11, 10]<br/>class = 0>, fillcolor="#fdf4ed"] ;
+5 -> 6 ;
+7 [label=<gini = 0.162<br/>samples = 124<br/>value = [11, 113]<br/>class = 1>, fillcolor="#4ca7e8"] ;
+5 -> 7 ;
+8 [label=<pH &le; 453.5<br/>gini = 0.5<br/>samples = 2906<br/>value = [1489, 1417]<br/>class = 0>, fillcolor="#fef9f5"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<Sulfatos &le; 1614.5<br/>gini = 0.5<br/>samples = 2392<br/>value = [1169, 1223]<br/>class = 1>, fillcolor="#f6fbfe"] ;
+8 -> 9 ;
+10 [label=<gini = 0.498<br/>samples = 1758<br/>value = [940.0, 818.0]<br/>class = 0>, fillcolor="#fcefe5"] ;
+9 -> 10 ;
+11 [label=<gini = 0.461<br/>samples = 634<br/>value = [229.0, 405.0]<br/>class = 1>, fillcolor="#a9d4f4"] ;
+9 -> 11 ;
+12 [label=<Dureza &le; 172.0<br/>gini = 0.47<br/>samples = 514<br/>value = [320, 194]<br/>class = 0>, fillcolor="#f5cdb1"] ;
+8 -> 12 ;
+13 [label=<gini = 0.38<br/>samples = 47<br/>value = [12.0, 35.0]<br/>class = 1>, fillcolor="#7dbfee"] ;
+12 -> 13 ;
+14 [label=<gini = 0.449<br/>samples = 467<br/>value = [308, 159]<br/>class = 0>, fillcolor="#f2c29f"] ;
+12 -> 14 ;
+}
